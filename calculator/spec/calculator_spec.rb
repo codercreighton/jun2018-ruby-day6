@@ -5,7 +5,8 @@ RSpec.describe Calculator do
 	#creates a variable to represent an instance of our Calculator class
 	let(:calculation1){Calculator.new(5,10)}
 	let(:calculation2){Calculator.new(4,12)}
-
+	
+	# checks to make sure the attributes are added correctly	
 	it ".new creates a new instance of the Calculator class" do
 		expect(calculation1).to be_an_instance_of Calculator
 	end	
