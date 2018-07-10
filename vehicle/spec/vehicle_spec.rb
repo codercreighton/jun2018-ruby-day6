@@ -4,6 +4,7 @@ RSpec.describe Vehicle do
 	let(:vehicle1){Vehicle.new("Explorer", "Ford", 20000, false)}
 	let(:vehicles) {Array.new}
 
+#test to make sure the attributes are working
 	it ".new creates a new instance of Vehicle" do
 		expect(vehicle1).to be_an_instance_of Vehicle
 	end
@@ -32,6 +33,7 @@ RSpec.describe Vehicle do
 		expect(vehicle1.end_sale).to eql(20000)
 	end	 	
 
+#test to make sure we can create an array of Vehicle objects
  	it "adds an instance vehicle to vehicle array" do
  		vehicles.push(vehicle1)
  		expect(vehicles).to include(vehicle1)
